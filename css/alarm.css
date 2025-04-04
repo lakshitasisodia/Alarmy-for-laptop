@@ -27,6 +27,9 @@
         font-size: x-large;
 
     }
-    
+    .stopwatch-buttons button
+{
+    width: 5rem;
+}
 
 }
