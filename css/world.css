@@ -1,0 +1,10 @@
+#clock-display
+{
+    height: 50vh;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.682);
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+    color: white;
+}

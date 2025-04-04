@@ -1,0 +1,264 @@
+.cardholder
+{
+    height: 90%;
+    width: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+/* Ensure overlay is correctly displayed */
+#focusOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Position and style the timer setter modal */
+#set-timer-modal {
+    display: none;
+        position: fixed;
+    left: 40%;
+    top: 25%;
+    width: 35%;
+    height: 45%;
+    background-color: #343434e8;
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+    z-index: 1000;
+}
+.modal-content
+{
+    height: 100%;
+    width: 100%;
+}
+.setbuttonholder{
+    width: 100%;
+    height: 20%;
+    gap: 1rem;
+}
+#set-timer-modal input {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+}
+#set-timer-modal input:focus {
+outline: none;
+border: none;
+}
+#set-timer-modal button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+#set-timer-modal button:hover {
+    transform: scale(1.1);
+}
+
+/* Style for selected timer */
+
+/* Notes styling */
+#notes-section {
+    width: 90%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 24px;
+    padding: 10px;
+    align-self: center;
+    border: 0.5px solid white;
+    margin-bottom: 10px;
+    background-color: #0b1c25;
+}
+
+.note {
+    padding: 10px;
+    background-color: #343434e8;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+
+    #set-timer-modal {
+        left: 60%;
+        transform: translateX(-50%);
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #set-timer-modal {
+        width: 50%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 570px) {
+    #set-timer-modal {
+        width: 85%;
+        left: 50%;
+    }
+}
+@media (max-width: 350px) {
+    #set-timer-modal {
+       height: 35%;
+    }
+}
+
+.cards
+{
+    height: 48%;
+    width: 30%;
+    background-color: #0b1c25d0;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cards:hover
+{
+    transform: scale(1.05);
+}
+.cardheading
+{
+    overflow: hidden;
+    height: 8%;
+    width: 98%;
+    margin-left: 2%;
+    font-weight: bold;
+}
+.timerboxholder
+{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timerbox
+{
+    width: 25vh; /* Make width relative to height */
+    height: 25vh;
+    border: 10px solid grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timerboxbutton
+{
+    overflow: hidden;
+    height: 12%;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timerboxbutton img
+{
+filter: invert(1);
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addbutton
+{
+    position: fixed;
+    bottom: 30px;
+    right: 33px;
+    height: 60px;
+    width: 75px;
+    background-color: #0b1c25d0;
+    border-radius: 1rem;
+
+}
+.addbutton img{
+    width: 70%;
+    filter: invert(1);
+}
+.imagepen , .imageplus{
+    width: 50%;
+    height: 80%;
+    cursor: pointer;
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1850px) {
+.cardholder
+{
+    gap: 1rem;
+}
+    .cards {
+        height: 44%;
+        width: 32%;
+    }
+}
+@media (max-width: 1550px) {
+ .timerbox
+ {
+    height: 20vh;
+    width: 20vh;
+ }
+}
+@media (max-width: 1040px) {
+    .cards {
+        height: 45%;
+        width: 47%;
+    }
+
+}
+/* Phone (max-width: 768px) */
+@media (max-width: 550px) {
+    .cardholder
+    {
+        gap: 1rem;
+    }
+        .cards {
+            height: 48%;
+            width: 98%;
+        }
+    }
+    @media (max-width: 400px) {
+        .cardholder
+        {
+            gap: 1rem;
+        }
+            .cards {
+                height: 38%;
+                width: 98%;
+            }
+        }
+
+   

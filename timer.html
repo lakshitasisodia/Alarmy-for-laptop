@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer of Alarmy for laptop : A focusing partner and alarm clock for productivity</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/timer.css">
+    <link rel="stylesheet" href="./css/utility.css">
+</head>
+<body id="timer-page">
+    <div class="holder flex jbetween">
+        <nav class="navbar flex column ">
+            <div role="button" class=" button flex">
+                <img role="button" class="maximum" src="./svg/minimize.svg" alt=""> 
+            </div>
+            <div role="button" class="focus button flex">
+                <img role="button" src="./svg/focus.svg" alt=""><p>Focus Sessions</p>
+            </div>
+            <div role="button" class="timer button flex">
+                <img role="button" src="./svg/timer.svg" alt=""><p>Timer</p>
+            </div>
+            <div role="button" class="alarm button flex">
+                <img role="button" src="./svg/alarm.svg" alt=""><p>Stopwatch</p>
+            </div>
+            <div role="button" class="world button flex">
+                <img role="button" src="./svg/world.svg" alt=""><p>Alarm clock</p>
+            </div>
+        </nav>
+        <div class="mainbdy flex column justify">
+            
+            <div class="mainbdyheading flex ">
+                <img role="button" class="minimize" src="./svg/minimize.svg" alt=""> <h1 class="flex align jcentre">Timer </h1>
+            </div>
+          
+            <div id="selected-timer" class="selected-timer flex align jcentre"></div>
+            <div   class="cardholder flex wrap">
+
+        </div>
+    </div>
+    <div class="addbutton flex align justify">
+        <div role="button"  class="imagepen flex align jcentre"><img src="./svg/pen.svg" alt=""></div>
+
+    </div>
+    <div id="set-timer-modal" class="modal">
+        <div class="modal-content flex column align justify">
+            <h2>Set Custom Timer</h2>
+            <input type="number" id="custom-hours" placeholder="Hours" min="0">
+            <input type="number" id="custom-minutes" placeholder="Minutes" min="0">
+            <input type="number" id="custom-seconds" placeholder="Seconds" min="0">
+            <div class="setbuttonholder flex align jcentre">
+                <button class="addtimer">Add Timer</button>
+                <button onclick="closeSetTimerModal()">Close</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/timer.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

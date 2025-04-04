@@ -1,0 +1,249 @@
+#focusOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    z-index: 9999;
+}
+.mainbdy {
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+    width: 100%; 
+    position: relative;
+}
+
+
+.holder
+{
+    position: relative;
+}
+.navbar{
+    height: 100vh;
+    width: 20%;
+    background-color: #0b1c25;
+    box-shadow: 3px 4px 24px #000000;
+    gap: 2%;
+    left: 0;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    z-index: 3;
+}
+.timersetter
+{
+    height: 45%;
+    width: 35%;
+    border-radius: 2rem;
+    position: fixed;
+    background-color: #343434e8;
+    left: 40%;
+    top: 25%;
+    gap: 10%;
+    font-size: x-large;
+}
+.timersetter input{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar div{
+    width: 100%;
+    margin: 5%;
+    cursor: pointer;
+}
+.button{
+gap: 6%;
+}
+.button  img{
+    filter: invert(1);
+    width: 1.5rem;
+}
+.mainbdyheading{
+    gap: 2%;
+    margin-left: 2%;
+    height: 8%;
+   
+}
+.mainbdyheading img{
+    filter: invert(1);
+    width: 0;
+    visibility: hidden;
+}
+.button p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbdy
+{
+    position: relative;
+    width: 80%;
+    height: 100vh;
+}
+
+.mainbdy .textbar 
+{
+    height: 90%;
+}
+.mainbdy .textbar img{
+    height: 60%;
+
+}
+.textbartext
+{
+    height: 20%;
+    width: 100%;
+    gap: 10%;
+    font-size: x-large;
+}
+.textbar h2{
+    overflow: hidden;
+
+}
+.textbartext p{
+    width: 80%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: medium;
+margin-top: 2%;
+overflow: hidden;
+}
+ button
+{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    transition: transform 0.3s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        width: 30%;
+    }
+
+    .mainbdy {
+        width: 68%;
+    }
+
+    .textbartext {
+        font-size: large;
+    }
+
+    button {
+        width: 7rem;
+        height: 2rem;
+        font-size: small;
+    }
+    .timersetter
+{
+    left: 50%;
+    top: 25%;
+}
+}
+/* Phone (max-width: 768px) */
+@media (max-width: 768px) {
+.mainbdy h1{
+    height: 5%;
+    height: auto;
+}
+.mainbdy .textbar
+{
+    height: 95%;
+}
+
+.textbartext p{
+    width: 80%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: medium;
+
+}
+
+.mainbdyheading img{
+    width: 1.5rem;
+    visibility: visible;
+}
+    .navbar {
+      left:-80%;
+      width: 70%;
+      position: fixed;
+
+    }
+    .mainbdy {
+width: 100%;
+height: 100vh;
+    }
+    
+    
+    .mainbdy .textbar img {
+        height: 40%;
+    }
+
+    .textbartext {
+        height: auto;
+        font-size: medium;
+        text-align: center;
+    }
+    button {
+        width: 6rem;
+        height: 2rem;
+        font-size: small;
+    }
+    .timersetter
+    {
+        width: 50%;
+        left: 25%;
+        text-align: center;
+    }
+}
+
+
+        @media (max-width: 770px) and (min-width: 500px) {
+            .navbar {
+                width: 50%;  /* Adjust width */
+                left: -100%;  /* Initially hidden */
+            }
+            
+        }
+        @media (max-width: 570px)
+        {
+            .timersetter
+            {
+                width: 85%;
+                left: 10%;
+                text-align: center;
+            }
+        }
+       @media (min-height : 1200px)
+    
+       {
+        .timersetter
+        {
+            height: 30%;
+            width: 45%;
+            left: 43%;
+        }
+       }

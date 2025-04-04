@@ -1,0 +1,32 @@
+.watch
+{
+    height: 90%;
+    width: 100%;
+}
+#stopwatch-display
+{
+    height: 50vh;
+    width: 50vh;
+    background-color: rgba(0, 0, 0, 0.576);
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    border: 10px solid wheat;
+    font-size: xx-large;
+}
+.stopwatch-buttons
+{
+    width: 80%;
+    height: 6vh;
+}
+
+@media (max-width: 450px) {
+    #stopwatch-display
+    {
+        height: 35vh;
+        width: 35vh;
+        font-size: x-large;
+
+    }
+    
+
+}

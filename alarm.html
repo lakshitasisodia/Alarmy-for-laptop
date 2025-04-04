@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer of Alarmy for laptop : A focusing partner and alarm clock for productivity</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/timer.css">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/alarm.css">
+</head>
+<body id="alarm-page">
+    <div class="holder flex jbetween">
+        <nav class="navbar flex column ">
+            <div role="button" class=" button flex">
+                <img role="button" class="maximum" src="./svg/minimize.svg" alt=""> 
+            </div>
+            <div role="button" class="focus button flex">
+                <img role="button" src="./svg/focus.svg" alt=""><p>Focus Sessions</p>
+            </div>
+            <div role="button" class="timer button flex">
+                <img role="button" src="./svg/timer.svg" alt=""><p>Timer</p>
+            </div>
+            <div role="button" class="alarm button flex">
+                <img role="button" src="./svg/alarm.svg" alt=""><p>Stopwatch</p>
+            </div>
+            <div role="button" class="world button flex">
+                <img role="button" src="./svg/world.svg" alt=""><p>Alarm clock</p>
+            </div>
+        </nav>
+        <div class="mainbdy flex column justify">
+            
+            <div class="mainbdyheading flex ">
+                <img role="button" class="minimize" src="./svg/minimize.svg" alt=""> <h1 class="flex align jcentre">Stopwatch </h1>
+            </div>
+          <div class="watch flex column align jcentre">
+              <div id="stopwatch-display" class="flex align jcentre"></div>
+              <div class="stopwatch-buttons flex align justify">
+                  <button id="start-btn">Start</button>
+                  <button id="stop-btn">Stop</button>
+                  <button id="reset-btn">Reset</button>
+              </div>
+
+          </div>
+    </div>
+
+    <script src="./js/alarm.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
